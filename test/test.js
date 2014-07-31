@@ -10,5 +10,9 @@ describe('#isPrime', function() {
   it('return false if number is NOT a prime', function() {
     expect(isPrime(10)).to.be.false;
   });
+
+  it('return false if number is NOT a integer', function() {
+  	expect(isPrime(3.1415926)).to.be.false;
+  });
 });
 
